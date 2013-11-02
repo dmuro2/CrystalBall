@@ -14,18 +14,6 @@
         android:src="@drawable/ball01"
         android:scaleType="fitCenter" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/enlighten_me"
-        android:textSize="24sp"
-        android:id="@+id/button"
-        android:layout_gravity="center_horizontal|bottom"
-        android:paddingTop="18dp"
-        android:paddingBottom="20dp"
-        android:textColor="#3f0f7f"
-        android:textAlignment="center" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
