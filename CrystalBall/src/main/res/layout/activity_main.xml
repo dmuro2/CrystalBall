@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:src="@drawable/ball01"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enlighten_me"
+        android:textSize="24sp"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:paddingTop="18dp"
+        android:paddingBottom="20dp"
+        android:textColor="#3f0f7f"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Better not to tell you now"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:shadowColor="@android:color/white"
+            android:shadowRadius="10"
+            android:layout_weight=".6"
+            android:typeface="sans" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+    </LinearLayout>
+
+</FrameLayout>
