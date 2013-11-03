@@ -7,6 +7,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,6 +18,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
+
+    public static final String TAG = MainActivity.class.getSimpleName();
 
     private CrystallBall mCrystalBall = new CrystallBall();
     private TextView mAnswerLabel;
@@ -44,6 +47,10 @@ public class MainActivity extends Activity {
             }
         });
 
+        //Toast.makeText(this, "Yay! Our activity was created!", Toast.LENGTH_LONG).show();
+
+        // write to the log
+        Log.d(TAG, "We're logging from the onCreate method");
 
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
